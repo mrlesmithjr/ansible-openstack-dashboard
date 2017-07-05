@@ -1,14 +1,16 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [ansible-openstack-dashboard](#ansible-openstack-dashboard)
-  - [Requirements](#requirements)
-  - [Role Variables](#role-variables)
-  - [Dependencies](#dependencies)
-  - [Example Playbook](#example-playbook)
-  - [License](#license)
-  - [Author Information](#author-information)
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents**  _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+-   [ansible-openstack-dashboard](#ansible-openstack-dashboard)
+    -   [Requirements](#requirements)
+    -   [Role Variables](#role-variables)
+    -   [Dependencies](#dependencies)
+    -   [Example Playbook](#example-playbook)
+    -   [License](#license)
+    -   [Author Information](#author-information)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -57,6 +59,11 @@ openstack_dashboard_openstack_api_versions:
 # The hostname of the Identity service server used for authentication if you
 # only have one region.
 openstack_dashboard_openstack_host: '127.0.0.1'
+
+# Defines if Neutron networking provides layer 3 functionality and self-service
+# networks. This would be if selecting option 2 from the setup guides
+# https://docs.openstack.org/ocata/install-guide-ubuntu/neutron-controller-install-option2.html
+openstack_dashboard_enable_neutron_l3: false
 
 # Overrides the default domain used when running on a single-domain model with
 # version 3 of the Identity service. All entities will be created in the default
