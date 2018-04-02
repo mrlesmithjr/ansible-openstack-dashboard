@@ -13,7 +13,7 @@
 
 - name: config | Setting Permissions On /var/lib/openstack-dashboard/secret_key
   file:
-    dest: "/var/lib/openstack-dashboard/secret_key"
-    owner: "www-data"
-    group: "www-data"
+    dest: /var/lib/openstack-dashboard/secret_key
+    owner: horizon
+    group: horizon
   become: true
